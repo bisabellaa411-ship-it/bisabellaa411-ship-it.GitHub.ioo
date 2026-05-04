@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Ansiedad social</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ansiedad Social</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<!-- FONDO -->
+<canvas id="fondo"></canvas>
+
+<!-- AUDIO -->
+<audio id="musica" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleAudio()" class="audio-btn">🎧 Música</button>
+
+<div class="contenedor">
+
+<header>
+  <h1>Ansiedad Social</h1>
+
+  <p id="saludo"></p>
+
+  <button id="logout" onclick="cerrarSesion()">Cerrar sesión</button>
+
+  <button onclick="toggleModo()">Modo claro/oscuro</button>
+
+  <!-- MENU -->
+ 
+</header>
+
+<div class="grid">
+
+  <div class="caja">
+    <h2>¿Qué es?</h2>
+    <p>La ansiedad social es el miedo intenso a interactuar con otras personas.</p>
+  </div>
+
+  <div class="caja">
+    <h2>Síntomas</h2>
+    <ul>
+      <li>Nervios</li>
+      <li>Sudoración</li>
+      <li>Miedo a hablar</li>
+      <li>Evitar personas</li>
+    </ul>
+  </div>
+
+  <div class="caja">
+    <h2>Causas</h2>
+    <p>Experiencias negativas o miedo al rechazo.</p>
+  </div>
+
+  <div class="caja">
+    <h2>Consecuencias</h2>
+    <p>Afecta relaciones y autoestima.</p>
+  </div>
+
+</div>
+
+<div id="info" class="caja">
+  <h2>Información importante</h2>
+  <p>Es tratable con terapia y apoyo emocional.</p>
+</div>
+
+<div id="ayuda" class="caja">
+  <h2>Ayuda</h2>
+  <ul>
+    <li>Psicólogos</li>
+    <li>Familia</li>
+    <li>Amigos</li>
+  </ul>
+</div>
+
+<div class="caja">
+  <h2>Tips</h2>
+  <ul>
+    <li>Respira profundo</li>
+    <li>Habla con alguien</li>
+    <li>Relájate</li>
+    <li>Evita pensamientos negativos</li>
+  </ul>
+</div>
+
+<!-- LOGIN -->
+<div id="cuenta" class="caja">
+
+  <h2>Iniciar sesión</h2>
+  <form id="loginForm">
+    <input type="email" id="loginEmail" placeholder="Correo"><br><br>
+    <input type="password" id="loginPass" placeholder="Contraseña"><br><br>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <h2>Crear cuenta</h2>
+  <form id="registerForm">
+    <input type="text" id="regName" placeholder="Nombre"><br><br>
+    <input type="email" id="regEmail" placeholder="Correo"><br><br>
+    <input type="password" id="regPass" placeholder="Contraseña"><br><br>
+    <button type="submit">Registrarse</button>
+  </form>
+
+  <p id="mensaje"></p>
+
+</div>
+
+<footer>
+  <p>No estas solo</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

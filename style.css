@@ -1,0 +1,260 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  background: #161228;
+  color: #e6d7ff;
+  transition: 0.5s;
+}
+
+/* MODO CLARO */
+/* 🌸 MODO CLARO PASTEL (NO TAN CLARO) */
+body.claro {
+  background: #e9deee;
+  /* lavanda suave pero visible */
+  color: #2f2433;
+}
+
+/* CONTENEDOR */
+body.claro .contenedor {
+  background: #dcd0e3;
+  /* gris-lila */
+  border: 2px solid #b38bb1;
+  box-shadow: 0 0 15px #cfaed1;
+}
+
+/* CAJAS */
+body.claro .caja {
+  background: #d4c4dd;
+  /* morado pastel más sólido */
+  border: 1px solid #b38bb1;
+  box-shadow: 0 0 10px rgba(179, 139, 177, 0.5);
+}
+
+/* TÍTULOS */
+body.claro h1 {
+  color: #8c5e8a;
+  text-shadow: 0 0 8px #cfaed1;
+}
+
+body.claro h2 {
+  color: #9c6f9a;
+}
+
+/* NAV */
+body.claro nav a {
+  border: 1px solid #b38bb1;
+  color: #5a3f59;
+  box-shadow: 0 0 5px #cfaed1;
+}
+
+body.claro nav a:hover {
+  background: #cfaed1;
+  color: #2f2433;
+}
+
+/* BOTONES */
+body.claro button {
+  background: #cfaed1;
+  color: #2f2433;
+  box-shadow: 0 0 10px #cfaed1;
+}
+
+body.claro button:hover {
+  background: #b38bb1;
+}
+
+/* INPUT */
+body.claro input {
+  background: #e3d6ea;
+  border-bottom: 2px solid #b38bb1;
+  color: #2f2433;
+}
+
+/* DROPDOWN */
+body.claro .dropdown {
+  background: #d4c4dd;
+  border: 1px solid #b38bb1;
+  box-shadow: 0 0 10px #cfaed1;
+}
+
+body.claro .dropdown a {
+  color: #5a3f59;
+}
+
+body.claro .dropdown a:hover {
+  background: #cfaed1;
+  color: #2f2433;
+}
+
+/* LOGOUT */
+body.claro #logout {
+  border: 1px solid #b38bb1;
+  box-shadow: 0 0 10px #cfaed1;
+}
+
+/* LOGOUT */
+body.claro #logout {
+  border: 1px solid #d6b4d2;
+  box-shadow: 0 0 10px #e8cfe6;
+}
+
+/* LOGOUT */
+body.claro #logout {
+  border: 1px solid #d6b4d2;
+  box-shadow: 0 0 10px #e8cfe6;
+}
+
+/* FONDO */
+#fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* CONTENEDOR */
+.contenedor {
+  width: 85%;
+  margin: 30px auto;
+  background: #0f0c1f;
+  border: 2px solid #975F8F;
+  padding: 20px;
+  box-shadow: 0 0 15px #975F8F;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #BEA7B9;
+  text-shadow: 0 0 10px #975F8F;
+}
+
+/* MENU */
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.menu button {
+  border: 1px solid #975F8F;
+  box-shadow: 0 0 10px #975F8F;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #1F1B3D;
+  border: 1px solid #975F8F;
+  box-shadow: 0 0 10px #975F8F;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  color: #BEA7B9;
+}
+
+.dropdown a:hover {
+  background: #975F8F;
+  color: #161228;
+}
+
+.show {
+  display: block;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin: 10px;
+  padding: 8px;
+  border: 1px solid #975F8F;
+  box-shadow: 0 0 5px #975F8F;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #BEA7B9;
+}
+
+/* GRID RESPONSIVE */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.caja {
+  background: #1F1B3D;
+  padding: 15px;
+  border: 1px solid #48294E;
+  box-shadow: 0 0 10px rgba(151, 95, 143, 0.5);
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.caja {
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+.caja:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #BEA7B9;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 8px;
+  background: #0f0c1f;
+  border: none;
+  border-bottom: 2px solid #975F8F;
+  color: white;
+}
+
+/* BOTONES */
+button {
+  background: #975F8F;
+  color: #161228;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #975F8F;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #BEA7B9;
+}
+
+/* AUDIO */
+.audio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* LOGIN */
+#cuenta {
+  display: none;
+}
+
+/* LOGOUT */
+#logout {
+  display: none;
+  border: 1px solid #975F8F;
+  box-shadow: 0 0 10px #975F8F;
+}
